@@ -1,0 +1,9 @@
+# Used only for development
+version: '3.7'
+
+services:
+  redis:
+    image: redis
+    restart: on-failure
+    ports:
+      - '0.0.0.0:6379:6379'
